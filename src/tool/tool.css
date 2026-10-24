@@ -1,0 +1,46 @@
+/* 直播弹幕关键词统计：只用 kit.css 的变量。类名统一以 dm- 开头。 */
+.dm-root { flex: 1; min-height: 0; display: flex; flex-wrap: wrap; gap: 14px; align-items: stretch; }
+.dm-side { flex: 1 1 300px; max-width: 380px; min-width: 260px; padding: 14px; display: flex; flex-direction: column; gap: 18px; }
+.dm-main { flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.dm-sec { display: grid; gap: 8px; align-content: start; }
+.dm-sec textarea.k-input, .dm-paste textarea.k-input { height: auto; padding: 8px 10px; line-height: 1.6; resize: vertical; }
+.dm-file { display: flex; align-items: center; gap: 6px; font-size: .93em; }
+.dm-map { display: grid; gap: 6px; padding: 10px; border-radius: min(var(--radius), 10px); background: var(--side); }
+.dm-map p { margin: 0; font-size: .9em; }
+.dm-row { display: flex; align-items: center; gap: 8px; }
+/* 标签列等宽，下拉框对齐 */
+.dm-row > span:first-child { flex: 0 0 auto; min-width: 8em; font-size: .93em; }
+.dm-num { width: 72px; }
+.dm-sel { width: auto; min-width: 110px; }
+.dm-warn { color: var(--err); }
+.dm-paste { display: grid; gap: 6px; font-size: .92em; }
+.dm-paste > span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); }
+.dm-btns { display: flex; gap: 6px; }
+.dm-btns .k-btn { height: 28px; padding: 0 8px; }
+.dm-empty { margin: auto; text-align: center; line-height: 1.9; padding: 40px 0; }
+
+.dm-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.dm-stats { flex: 1; display: flex; gap: 10px; flex-wrap: wrap; }
+.dm-stats > div { flex: 1 1 110px; display: grid; gap: 2px; padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.dm-stats b { font-size: 1.6em; line-height: 1.1; }
+.dm-stats span { color: var(--muted); font-size: .88em; }
+.dm-card { padding: 12px 14px; display: grid; gap: 8px; align-content: start; }
+.dm-card h3 { margin: 0; font-size: 1em; }
+.dm-card-hd { display: flex; align-items: center; gap: 8px; }
+.dm-words { color: var(--muted); font-size: .92em; }
+
+.dm-chart { display: flex; align-items: flex-end; gap: 6px; height: 150px; padding-top: 4px; }
+.dm-bar { flex: 1 1 0; min-width: 0; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: stretch; gap: 3px; text-align: center; }
+.dm-bar-col { background: var(--primary-soft); border-radius: 4px 4px 0 0; display: flex; align-items: flex-end; min-height: 2px; overflow: hidden; border: 1px solid var(--line); border-bottom: 0; }
+.dm-bar-col i { display: block; width: 100%; background: var(--primary); }
+.dm-bar.peak .dm-bar-col { border-color: var(--primary); }
+.dm-bar-n { font-size: .8em; color: var(--muted); }
+.dm-bar.peak .dm-bar-n { color: var(--primary); font-weight: 700; }
+.dm-bar-l { font-size: .78em; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: clip; }
+
+.dm-two { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+.dm-two > .dm-card { flex: 1 1 260px; min-width: 0; }
+.dm-rank { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 18px; max-height: 300px; overflow: auto; }
+.dm-rank li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px dashed var(--line); }
+.dm-q { list-style: none; margin: 0; padding: 0; max-height: 300px; overflow: auto; display: grid; gap: 2px; }
+.dm-q li { display: grid; grid-template-columns: 4.5em 4em minmax(0, 1fr); gap: 8px; padding: 3px 0; border-bottom: 1px dashed var(--line); font-size: .95em; }

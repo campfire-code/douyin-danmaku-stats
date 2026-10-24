@@ -1,0 +1,13 @@
+{
+  "id": "e27",
+  "slug": "douyin-danmaku-stats",
+  "name": "直播弹幕关键词统计",
+  "version": "0.1.0",
+  "repo": "campfire-code/douyin-danmaku-stats",
+  "license": "MIT",
+  "ui": {
+    "layout": "c",
+    "palette": "orange"
+  },
+  "upstream": null
+}
